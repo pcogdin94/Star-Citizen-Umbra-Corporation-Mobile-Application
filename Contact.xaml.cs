@@ -6,8 +6,8 @@ public partial class Contact : ContentPage
 {
     public static readonly HttpClient httpClient = new HttpClient();
 	public static readonly HttpClient httpClient2 = new HttpClient();
-    private const string DiscordWebhookUrl = "https://discord.com/api/webhooks/1497082676148961391/Gsh02UvFIphn_Goo42iYOPpyYnpz8sYqmKQISjhW2YP_c7_lLTWvIiw-NX06deUDxGFU";
-	private const string BBSWebhookUrl = "https://discord.com/api/webhooks/1497277564559954070/-Y4tFr8WRNrN4L2Byw7I7IFFJdHaS76mJd-xo6JNzAXKUQPnyFwvBPIEpJMICEvrQtQP";
+    private const string DiscordWebhookUrl = "";
+	private const string BBSWebhookUrl = "";
 
     public Contact()
 	{
