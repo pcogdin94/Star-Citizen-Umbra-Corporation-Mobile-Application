@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UmbraCorpApp.About"
+             Title="Credis">
+
+    <VerticalStackLayout BackgroundColor="Black">
+
+        <Label
+            Padding="30"
+            Text="Created by Byte Bunny Software&#10;&#10;Lead Developer - Peter Ogdin&#10;&#10;Graphic Designer - Ryan Colosanti"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            TextColor="#962323"
+            FontFamily="VikingSquad"
+            FontSize="30"
+            />
+
+    </VerticalStackLayout>
+    
+</ContentPage>

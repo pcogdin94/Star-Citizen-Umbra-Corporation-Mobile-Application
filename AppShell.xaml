@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="UmbraCorpApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:UmbraCorpApp"
+    Shell.FlyoutBehavior="{OnIdiom Phone=Flyout, Default=Locked}"
+    FlyoutBackgroundColor="Black"
+    Shell.ForegroundColor="Black"
+    Shell.TabBarTitleColor="#962323"
+    Shell.TabBarBackgroundColor="Black"
+    
+    >
+    <!-- FlyoutBackgroundColor is color of Menu after expanding, Shell.ForegroundColor is color of burgerbar-->
+
+    <Shell.Resources>
+        <Style TargetType="Label" Class="FlyoutItemLabelStyle">
+            <Setter Property="FontSize" Value="35" />
+            <Setter Property="FontFamily" Value="VikingSquad" />
+            <Setter Property="TextColor" Value="#962323" />
+        </Style>
+    </Shell.Resources>
+    <FlyoutItem Title="Home" Icon="home.png">
+        
+        <Shell.TitleView>
+            <Label
+            Text="Home"
+            TextColor="Black"
+            FontFamily="VikingSquad"
+            FontSize="45"
+            VerticalTextAlignment="Center"
+            />
+        </Shell.TitleView>
+        
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" 
+            />
+        
+    </FlyoutItem>
+
+    <FlyoutItem Title="Division Info" Icon="info.png">
+        
+        <Shell.TitleView>
+            <Label
+                Text="Division Info"
+                TextColor="Black"
+                FontFamily="VikingSquad"
+                FontSize="45"
+                VerticalTextAlignment="Center"
+                />
+        </Shell.TitleView>
+        
+        <ShellContent
+            Title="Division Info"
+            ContentTemplate="{DataTemplate local:DivisionInfo}"
+            Route="DivisionInfo"
+            />
+        
+    </FlyoutItem>
+
+    <FlyoutItem Title="Links" Icon="links.png">
+
+        <Shell.TitleView>
+            <Label
+            Text="Links"
+            TextColor="Black"
+            FontFamily="VikingSquad"
+            FontSize="45"
+            VerticalTextAlignment="Center"
+            />
+        </Shell.TitleView>
+
+        <ShellContent
+            Title="Links"
+            ContentTemplate="{DataTemplate local:Links}"
+            Route="Links.xaml"
+            Icon="linkalt.png"
+            />
+
+    </FlyoutItem>
+
+    <FlyoutItem Title="Calendar" Icon="calendar.png">
+
+        <Shell.TitleView>
+            
+            <Label
+            Text="Calendar"
+            TextColor="Black"
+            FontFamily="VikingSquad"
+            FontSize="45"
+            VerticalTextAlignment="Center"
+            />
+            
+        </Shell.TitleView>
+
+        <ShellContent
+            Title="Calendar"
+            ContentTemplate="{DataTemplate local:Calendar}"
+            Route="Calendar" 
+            />
+
+    </FlyoutItem>
+
+    <FlyoutItem Title="About" Icon="about.png">
+
+
+        <Tab Title="Credits">
+
+            <Shell.TitleView>
+                <Label
+                Text="Credits"
+                TextColor="Black"
+                FontFamily="VikingSquad"
+                FontSize="45"
+                VerticalTextAlignment="Center"
+                />
+                
+            </Shell.TitleView>
+            
+            <ShellContent
+                Title="About"
+                ContentTemplate="{DataTemplate local:About}"
+                Route="About"
+                />
+            
+        </Tab>
+        
+        <Tab Title="Changelog">
+
+            <Shell.TitleView>
+                <Label
+                Text="Changelog"
+                TextColor="Black"
+                FontFamily="VikingSquad"
+                FontSize="45"
+                VerticalTextAlignment="Center"
+                />
+
+            </Shell.TitleView>
+
+            <ShellContent
+                Title="Changelog"
+                ContentTemplate="{DataTemplate local:Changelog}"
+                Route="Changelog"
+                />
+        </Tab>
+
+    </FlyoutItem>
+
+    <FlyoutItem Title="Contact" Icon="contact.png">
+
+        <Shell.TitleView>
+            <Label
+                Text="Contact"
+                TextColor="Black"
+                FontFamily="VikingSquad"
+                FontSize="45"
+                VerticalTextAlignment="Center"
+                />
+        </Shell.TitleView>
+
+        <ShellContent
+            Title="Contact"
+            ContentTemplate="{DataTemplate local:Contact}"
+            Route="Contact"
+            />
+
+    </FlyoutItem>
+
+    <Shell.FlyoutFooter>
+
+        <VerticalStackLayout>
+
+            <Label 
+                Text="&#x00A9; 2025 Byte Bunny Software"
+                FontFamily="VikingSquad"
+                TextColor="#962323"
+                HorizontalOptions="Center"
+                FontSize="20"
+                />
+
+            <Label
+                Text="v1.1.0"
+                Padding="20"
+                FontFamily="VikingSquad"
+                TextColor="#962323"
+                HorizontalOptions="Center"
+                FontSize="20"
+                />
+            <!-- First digit in version is major changes, second digit is noticeable changes (UI/etc), third digit is small changes (wording/spelling/backend) -->
+
+        </VerticalStackLayout>
+
+    </Shell.FlyoutFooter>
+
+</Shell>

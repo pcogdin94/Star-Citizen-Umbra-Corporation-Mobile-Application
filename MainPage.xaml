@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UmbraCorpApp.MainPage">
+
+    <VerticalStackLayout Margin="0" BackgroundColor="Black">
+        
+        <Label Text="Umbra Corp" 
+               Padding="20"
+               HorizontalTextAlignment="Center" 
+               VerticalTextAlignment="Center" 
+               FontFamily="VikingSquad" 
+               FontSize="60"
+               TextColor="#962323"/>
+
+        <Image Source="ucorlogo.png" 
+                     HeightRequest="356"
+                     WidthRequest="356"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Center"
+                     />
+
+        <Label Text=""
+               Padding="20"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               FontFamily="VikingSquad"
+               FontSize="25"
+               TextColor="#962323"
+               />
+
+    </VerticalStackLayout>
+    
+</ContentPage>

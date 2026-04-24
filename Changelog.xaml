@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UmbraCorpApp.Changelog"
+             Title="Changelog">
+    
+    <VerticalStackLayout BackgroundColor="Black">
+        
+        <Label 
+            Padding="20"
+            Text="v1.0.0"
+            FontFamily="VikingSquad"
+            FontSize="50"
+            TextColor="#962323"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            />
+
+        <Label
+            Text="- Created basic app functionality&#10;"
+            FontFamily="VikingSquad"
+            FontSize="30"
+            TextColor="#962323"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            />
+
+        <Label 
+            Padding="20"
+            Text="v1.1.0"
+            FontFamily="VikingSquad"
+            FontSize="50"
+            TextColor="#962323"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            />
+
+        <Label
+            Text="- Changed contact page to no longer open e-mail when user clicks submit;"
+            FontFamily="VikingSquad"
+            FontSize="30"
+            TextColor="#962323"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            />
+
+    </VerticalStackLayout>
+    
+</ContentPage>
