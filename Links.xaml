@@ -3,10 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UmbraCorpApp.Links"
              Title="Links">
-    
-    <VerticalStackLayout Margin="0" BackgroundColor="Black">
-        
-        <Label 
+    <ScrollView>
+        <VerticalStackLayout Margin="0" BackgroundColor="Black">
+
+            <Label 
             Text="Resources and Other Useful Links"
             Padding="20"
             FontFamily="VikingSquad"
@@ -14,82 +14,104 @@
             VerticalTextAlignment="Center"
             FontSize="45"
             TextColor="#962323"/>
+            
+            <!-- UCOR -->
+            <ImageButton Source="ucorsite.png"
+                         HeightRequest="64"
+                         WidthRequest="64"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         Clicked="OnUcorSiteClicked"/>
+            <Label
+                Text="Our Website"
+                Padding="20"
+                FontFamily="VikingSquad"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                FontSize="25"
+                TextColor="#962323"/>
+            
+            <!-- Discord -->
+            <ImageButton Source="discord.png" 
+                        HeightRequest="64"
+                        WidthRequest="64"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Clicked="OnDiscordClicked"/>
+            <Label 
+                Text="Discord"
+                Padding="20"
+                FontFamily="VikingSquad"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                FontSize="25"
+                TextColor="#962323"/>
 
-        <ImageButton Source="discord.png" 
-                     HeightRequest="64"
-                     WidthRequest="64"
-                     HorizontalOptions="Center"
-                     VerticalOptions="Center"
-                     Clicked="OnDiscordClicked"/>
-        <Label 
-            Text="Discord"
-            Padding="20"
-            FontFamily="VikingSquad"
-            HorizontalTextAlignment="Center"
-            VerticalTextAlignment="Center"
-            FontSize="25"
-            TextColor="#962323"/>
+            <!-- RSI -->
+            <ImageButton Source="rsi.png" 
+                        HeightRequest="64"
+                        WidthRequest="64"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Clicked="OnRSIClicked"/>
+            <Label 
+                Text="RSI"
+                Padding="20"
+                FontFamily="VikingSquad"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                FontSize="25"
+                TextColor="#962323"/>
 
-        <ImageButton Source="rsi.png" 
-                     HeightRequest="64"
-                     WidthRequest="64"
-                     HorizontalOptions="Center"
-                     VerticalOptions="Center"
-                     Clicked="OnRSIClicked"/>
-        <Label 
-            Text="RSI"
-            Padding="20"
-            FontFamily="VikingSquad"
-            HorizontalTextAlignment="Center"
-            VerticalTextAlignment="Center"
-            FontSize="25"
-            TextColor="#962323"/>
+            <!-- Spectrum -->
+            <ImageButton Source="spectrum.png" 
+                        HeightRequest="64"
+                        WidthRequest="64"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Clicked="OnSpectrumClicked"/>
+            <Label 
+                Text="Spectrum"
+                Padding="20"
+                FontFamily="VikingSquad"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                FontSize="25"
+                TextColor="#962323"/>
 
-        <ImageButton Source="spectrum.png" 
-                     HeightRequest="64"
-                     WidthRequest="64"
-                     HorizontalOptions="Center"
-                     VerticalOptions="Center"
-                     Clicked="OnSpectrumClicked"/>
-        <Label 
-            Text="Spectrum"
-            Padding="20"
-            FontFamily="VikingSquad"
-            HorizontalTextAlignment="Center"
-            VerticalTextAlignment="Center"
-            FontSize="25"
-            TextColor="#962323"/>
+            <!-- Erkul -->
+            <ImageButton Source="erkul.png" 
+                        HeightRequest="64"
+                        WidthRequest="64"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Clicked="OnErkulClicked"/>
+            <Label 
+                Text="Erkul"
+                Padding="20"
+                FontFamily="VikingSquad"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                FontSize="25"
+                TextColor="#962323"/>
 
-        <ImageButton Source="erkul.png" 
-                     HeightRequest="64"
-                     WidthRequest="64"
-                     HorizontalOptions="Center"
-                     VerticalOptions="Center"
-                     Clicked="OnErkulClicked"/>
-        <Label 
-            Text="Erkul"
-            Padding="20"
-            FontFamily="VikingSquad"
-            HorizontalTextAlignment="Center"
-            VerticalTextAlignment="Center"
-            FontSize="25"
-            TextColor="#962323"/>
+            <!-- SP Viewer -->
+            <ImageButton Source="spviewer.png" 
+                        HeightRequest="64"
+                        WidthRequest="64"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Clicked="OnSPViewerClicked"/>
+            <Label 
+                Text="SPViewer"
+                Padding="20"
+                FontFamily="VikingSquad"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                FontSize="25"
+                TextColor="#962323"/>
 
-        <ImageButton Source="spviewer.png" 
-                     HeightRequest="64"
-                     WidthRequest="64"
-                     HorizontalOptions="Center"
-                     VerticalOptions="Center"
-                     Clicked="OnSPViewerClicked"/>
-        <Label 
-            Text="SPViewer"
-            Padding="20"
-            FontFamily="VikingSquad"
-            HorizontalTextAlignment="Center"
-            VerticalTextAlignment="Center"
-            FontSize="25"
-            TextColor="#962323"/>
+        </VerticalStackLayout>
+    </ScrollView>
 
-    </VerticalStackLayout>
-    
 </ContentPage>
