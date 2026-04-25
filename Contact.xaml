@@ -15,7 +15,8 @@
             FontFamily="VikingSquad"
             FontSize="45"
             />
-
+        
+        <!-- E-mail -->
         <Entry
             x:Name="YourEmail"
             VerticalOptions="Center"
@@ -27,6 +28,7 @@
             Placeholder="Your E-mail"
             />
 
+        <!-- Message -->
         <Editor
             x:Name="MessageBody"
             VerticalOptions="Center"

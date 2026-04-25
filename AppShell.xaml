@@ -140,11 +140,6 @@
 
             </Shell.TitleView>
 
-            <ShellContent
-                Title="Changelog"
-                ContentTemplate="{DataTemplate local:Changelog}"
-                Route="Changelog"
-                />
         </Tab>
 
     </FlyoutItem>
