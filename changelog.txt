@@ -1,0 +1,13 @@
+v1.0.0
+    - Created base app and functionality
+
+v1.1.0
+    - Changed contact submissiosn to no longer open e-mail but instead added webhook to discord to alert devs of contact
+    - Changed logo on home screen
+
+v1.1.1
+    - Fixed contact page to no longer send message when no e-mail was input
+    - Fixed issue with top bar dimming when in dark mode
+    - Fixed submit button display issues on contact page
+    - Added website link on links page
+    - Added comments on some code pages to clarify usage for future users
