@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UmbraCorpApp.RegisterPage"
+             Title="Register Page"
+             Shell.TitleColor="Black"
+             >
+
+    <ScrollView>
+        
+        <VerticalStackLayout BackgroundColor="Black">
+
+            <Label 
+                Text="Create Account"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                FontSize="28"
+                FontFamily="VikingSquad"
+                TextColor="#962323"
+                Padding="0,5,0,5"/>
+
+            <Entry
+                x:Name="EmailEntry"
+                Placeholder="Email"
+                Keyboard="Email"
+                TextColor="#962323"
+                BackgroundColor="White"
+                WidthRequest="300"/>
+
+            <Entry
+                x:Name="PasswordEntry"
+                Placeholder="Password"
+                IsPassword="True"
+                TextColor="#962323"
+                BackgroundColor="White"
+                WidthRequest="300"
+                Margin="0,5,0,0"/>
+
+            <Entry
+                x:Name="ConfirmPasswordEntry"
+                Placeholder="Confirm Password"
+                IsPassword="True"
+                TextColor="#962323"
+                BackgroundColor="White"
+                WidthRequest="300"
+                Margin="5"/>
+
+            <Button
+                Text="Register"
+                FontSize="20"
+                FontFamily="VikingSquad"
+                Clicked="OnRegisterClicked"
+                Padding="20"
+                Margin="0,0,0,5"
+                TextColor="Black"
+                WidthRequest="250"
+                HeightRequest="50"/>
+
+            <Button
+                Text="Back to Login"
+                FontSize="20"
+                FontFamily="VikingSquad"
+                Clicked="OnBackToLoginClicked"
+                TextColor="Black"
+                WidthRequest="250"
+                HeightRequest="50"/>
+
+        </VerticalStackLayout>
+            
+    </ScrollView>
+
+</ContentPage>

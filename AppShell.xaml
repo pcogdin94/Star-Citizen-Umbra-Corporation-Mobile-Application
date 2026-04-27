@@ -20,6 +20,9 @@
             <Setter Property="TextColor" Value="#962323" />
         </Style>
     </Shell.Resources>
+
+    <!-- Home -->
+
     <FlyoutItem Title="Home" Icon="home.png">
         
         <Shell.TitleView>
@@ -39,6 +42,8 @@
             />
         
     </FlyoutItem>
+
+    <!-- Division Info -->
 
     <FlyoutItem Title="Division Info" Icon="info.png">
         
@@ -60,6 +65,8 @@
         
     </FlyoutItem>
 
+    <!-- Links -->
+
     <FlyoutItem Title="Links" Icon="links.png">
 
         <Shell.TitleView>
@@ -80,6 +87,8 @@
             />
 
     </FlyoutItem>
+
+    <!-- Calendar -->
 
     <FlyoutItem Title="Calendar" Icon="calendar.png">
 
@@ -103,12 +112,11 @@
 
     </FlyoutItem>
 
+    <!-- About -->
+    
     <FlyoutItem Title="About" Icon="about.png">
 
-
-        <Tab Title="Credits">
-
-            <Shell.TitleView>
+        <Shell.TitleView>
                 <Label
                 Text="Credits"
                 TextColor="Black"
@@ -116,39 +124,49 @@
                 FontSize="45"
                 VerticalTextAlignment="Center"
                 />
-                
+
             </Shell.TitleView>
-            
+
             <ShellContent
                 Title="About"
                 ContentTemplate="{DataTemplate local:About}"
                 Route="About"
                 />
-            
-        </Tab>
-        
-        <Tab Title="Changelog">
 
-            <Shell.TitleView>
-                <Label
-                Text="Changelog"
+    </FlyoutItem>
+    
+    <!-- Contact -->
+    
+    <FlyoutItem Title="Contact" Icon="contact.png">
+
+        <Shell.TitleView>
+            
+            <Label
+                Text="Contact"
                 TextColor="Black"
                 FontFamily="VikingSquad"
                 FontSize="45"
                 VerticalTextAlignment="Center"
                 />
+            
+        </Shell.TitleView>
 
-            </Shell.TitleView>
-
-        </Tab>
-
+        <ShellContent
+            Title="Contact"
+            ContentTemplate="{DataTemplate local:Contact}"
+            Route="Contact"
+            />
+        
     </FlyoutItem>
 
-    <FlyoutItem Title="Contact" Icon="contact.png">
+    <!-- Admin -->
+
+    <FlyoutItem Title="Admin" Icon="admin.png" IsVisible="False" x:Name="AdminFlyoutItem">
 
         <Shell.TitleView>
+            
             <Label
-                Text="Contact"
+                Text="Admin"
                 TextColor="Black"
                 FontFamily="VikingSquad"
                 FontSize="45"
@@ -157,12 +175,17 @@
         </Shell.TitleView>
 
         <ShellContent
-            Title="Contact"
-            ContentTemplate="{DataTemplate local:Contact}"
-            Route="Contact"
+            Title="Admin"
+            ContentTemplate="{DataTemplate local:Admin}"
+            Route="Admin"
             />
-
+        
     </FlyoutItem>
+
+    <MenuItem
+        IconImageSource="logout.png"
+        Text="Logout"
+        Clicked="OnLogoutClicked"/>
 
     <Shell.FlyoutFooter>
 
@@ -177,7 +200,7 @@
                 />
 
             <Label
-                Text="v1.1.0"
+                Text="v2.1.0"
                 Padding="20"
                 FontFamily="VikingSquad"
                 TextColor="#962323"

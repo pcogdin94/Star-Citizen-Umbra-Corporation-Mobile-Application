@@ -2,33 +2,35 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UmbraCorpApp.MainPage">
-
-    <VerticalStackLayout Margin="0" BackgroundColor="Black">
+    <ScrollView>
+        <VerticalStackLayout Margin="0" BackgroundColor="Black">
         
-        <Label Text="Umbra Corp" 
-               Padding="20"
-               HorizontalTextAlignment="Center" 
-               VerticalTextAlignment="Center" 
-               FontFamily="VikingSquad" 
-               FontSize="60"
-               TextColor="#962323"/>
+            <Label Text="Umbra Corp" 
+                Padding="20"
+                HorizontalTextAlignment="Center" 
+                FontFamily="VikingSquad" 
+                FontSize="60"
+                TextColor="#962323"/>
 
-        <Image Source="ucorlogo.png" 
+            <Image Source="ucorlogo.png" 
                      HeightRequest="356"
                      WidthRequest="356"
                      HorizontalOptions="Center"
-                     VerticalOptions="Center"
                      />
 
-        <Label Text=""
-               Padding="20"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center"
-               FontFamily="VikingSquad"
-               FontSize="25"
-               TextColor="#962323"
-               />
+            <Label Text="Victoria ex Umbra&#10;&#10;Umbra Corporation is a private interstellar enterprise built around logistics, security, intelligence, racing, and strategic influence."
+                Padding="20"
+                HorizontalTextAlignment="Center"
+                FontFamily="VikingSquad"
+                FontSize="25"
+                TextColor="#962323"
+                />
 
-    </VerticalStackLayout>
+            <WebView
+                x:Name="HomeVideoWebView"
+                HeightRequest="400" />
+
+        </VerticalStackLayout>
+    </ScrollView>
     
 </ContentPage>
