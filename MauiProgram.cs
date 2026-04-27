@@ -7,6 +7,7 @@
 //
 //
 using Microsoft.Extensions.Logging;
+using UmbraCorpApp.Services;
 
 namespace UmbraCorpApp;
 
@@ -24,10 +25,18 @@ public static class MauiProgram
 				fonts.AddFont("vikingsquad.ttf", "VikingSquad");
 			});
 
+		builder.Services.AddSingleton<SupabaseService>();
+
+		builder.Services.AddTransient<LoginPage>();
+		builder.Services.AddTransient<RegisterPage>();
+		builder.Services.AddTransient<MainPage>();
+
+		return builder.Build();
+
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
 
-		return builder.Build();
+		
 	}
 }

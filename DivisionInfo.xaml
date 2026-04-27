@@ -5,12 +5,13 @@
              Title="DivisionInfo">
     
     <ScrollView>
-        <VerticalStackLayout BackgroundColor="Black">
+        <VerticalStackLayout 
+            BackgroundColor="Black"
+            Padding="20"
+            Spacing="15">
 
             <Label 
-                Padding="20"
                 Text="Here you can find information on each division of the organization and what they do. If you're interested in being a part of another division, request the role in Discord."
-                VerticalTextAlignment="Center"
                 HorizontalTextAlignment="Center"
                 FontFamily="VikingSquad"
                 FontSize="25"
@@ -21,15 +22,12 @@
                      HeightRequest="128"
                      WidthRequest="128"
                      HorizontalOptions="Center"
-                     VerticalOptions="Center"
             />
             
             <Label 
                 Text="Umbra Logistics Division"
-                Padding="20"
                 FontFamily="VikingSquad"
                 HorizontalTextAlignment="Center"
-                VerticalTextAlignment="Center"
                 FontSize="30"
                 TextColor="#962323"
             />
@@ -38,10 +36,8 @@
                 Text="In charge of hauling, salvaging, scavenging, as well as loot sales, this division is an integral part not only of funding, but of contract execution. The Umbra Logistics Division is here to support each operation to the fullest extent of its abilities."
                 FontFamily="VikingSquad"
                 HorizontalTextAlignment="Center"
-                VerticalTextAlignment="Center"
                 FontSize="20"
                 TextColor="#962323"
-                Margin="0, 0, 0, 20"
             />
 
             <Image 
@@ -49,15 +45,12 @@
                 HeightRequest="128"
                 WidthRequest="128"
                 HorizontalOptions="Center"
-                VerticalOptions="Center"
             />
             
             <Label 
                 Text="Umbra Security Division"
-                Padding="20"
                 FontFamily="VikingSquad"
                 HorizontalTextAlignment="Center"
-                VerticalTextAlignment="Center"
                 FontSize="30"
                 TextColor="#962323"
             />
@@ -66,10 +59,8 @@
                 Text="Consisting of run-and-gunners, overwatch, medics, pilots, and the like. Umbra's Security Division is here to fulfill the more aggressive aspects of contracts. A force to be reckoned with, USD is looking to be the number one name not only in contracting, but in security, escort, and anything else we, or our allies, may need."
                 FontFamily="VikingSquad"
                 HorizontalTextAlignment="Center"
-                VerticalTextAlignment="Center"
                 FontSize="20"
                 TextColor="#962323"
-                Margin="0, 0, 0, 20"
             />
 
             <Image 
@@ -77,15 +68,12 @@
                 HeightRequest="128"
                 WidthRequest="128"
                 HorizontalOptions="Center"
-                VerticalOptions="Center"
             />
             
             <Label 
                 Text="Umbra Intelligence Network"
-                Padding="20"
                 FontFamily="VikingSquad"
                 HorizontalTextAlignment="Center"
-                VerticalTextAlignment="Center"
                 FontSize="30"
                 TextColor="#962323"
             />
@@ -94,10 +82,8 @@
                 Text="The UIN is the more secretive side of Umbra, consisting of our top intelligence gatherers, this division is by invite only, and does not share its secrets with any except those with a need to know."
                 FontFamily="VikingSquad"
                 HorizontalTextAlignment="Center"
-                VerticalTextAlignment="Center"
                 FontSize="20"
                 TextColor="#962323"
-                Margin="0, 0, 0, 20"
             />
 
         </VerticalStackLayout>

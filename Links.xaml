@@ -16,7 +16,7 @@
             TextColor="#962323"/>
             
             <!-- UCOR -->
-            <ImageButton Source="ucorsite.png"
+            <ImageButton Source="ucorlogo.png"
                          HeightRequest="64"
                          WidthRequest="64"
                          HorizontalOptions="Center"
@@ -33,11 +33,11 @@
             
             <!-- Discord -->
             <ImageButton Source="discord.png" 
-                        HeightRequest="64"
-                        WidthRequest="64"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Clicked="OnDiscordClicked"/>
+                         HeightRequest="64"
+                         WidthRequest="64"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         Clicked="OnDiscordClicked"/>
             <Label 
                 Text="Discord"
                 Padding="20"
@@ -49,11 +49,11 @@
 
             <!-- RSI -->
             <ImageButton Source="rsi.png" 
-                        HeightRequest="64"
-                        WidthRequest="64"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Clicked="OnRSIClicked"/>
+                         HeightRequest="64"
+                         WidthRequest="64"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         Clicked="OnRSIClicked"/>
             <Label 
                 Text="RSI"
                 Padding="20"
@@ -65,13 +65,29 @@
 
             <!-- Spectrum -->
             <ImageButton Source="spectrum.png" 
-                        HeightRequest="64"
-                        WidthRequest="64"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Clicked="OnSpectrumClicked"/>
+                         HeightRequest="64"
+                         WidthRequest="64"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         Clicked="OnSpectrumClicked"/>
             <Label 
                 Text="Spectrum"
+                Padding="20"
+                FontFamily="VikingSquad"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                FontSize="25"
+                TextColor="#962323"/>
+            
+            <!-- Star Jump Fleet Viewer -->
+            <ImageButton Source="starjump.png"
+                         HeightRequest="64"
+                         WidthRequest="64"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         Clicked="OnSjfvSiteClicked"/>
+            <Label
+                Text="Starjump"
                 Padding="20"
                 FontFamily="VikingSquad"
                 HorizontalTextAlignment="Center"
@@ -81,11 +97,11 @@
 
             <!-- Erkul -->
             <ImageButton Source="erkul.png" 
-                        HeightRequest="64"
-                        WidthRequest="64"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Clicked="OnErkulClicked"/>
+                         HeightRequest="64"
+                         WidthRequest="64"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         Clicked="OnErkulClicked"/>
             <Label 
                 Text="Erkul"
                 Padding="20"
@@ -97,11 +113,11 @@
 
             <!-- SP Viewer -->
             <ImageButton Source="spviewer.png" 
-                        HeightRequest="64"
-                        WidthRequest="64"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Clicked="OnSPViewerClicked"/>
+                         HeightRequest="64"
+                         WidthRequest="64"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         Clicked="OnSPViewerClicked"/>
             <Label 
                 Text="SPViewer"
                 Padding="20"

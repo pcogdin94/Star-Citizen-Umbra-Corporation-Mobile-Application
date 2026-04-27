@@ -5,7 +5,7 @@
              Title="Contact">
     
     <VerticalStackLayout BackgroundColor="Black">
-        
+
         <Label 
             Padding="20"
             Text="Contact the Developer"
@@ -16,17 +16,13 @@
             FontSize="45"
             />
         
-        <!-- E-mail -->
-        <Entry
-            x:Name="YourEmail"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"
-            HeightRequest="30"
-            WidthRequest="250"
-            Margin="0, 0, 0, 5"
-            BackgroundColor="White"
-            Placeholder="Your E-mail"
-            />
+        <!-- User E-mail Display -->
+        <Label
+            x:Name="UserEmailLabel"
+            TextColor="#962323"
+            FontSize="25"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"/>
 
         <!-- Message -->
         <Editor
@@ -37,11 +33,30 @@
             WidthRequest="250"
             BackgroundColor="White"
             Placeholder="Your Message"
+            Margin="0,10,0,5"
             />
+        
+        <!-- Purpose -->
+
+        <Picker
+            x:Name="Purpose"
+            Title="What is this concerning?"
+            SelectedIndexChanged="Purpose_SelectedIndexChanged"
+            BackgroundColor="White"
+            HeightRequest="30"
+            WidthRequest="250">
+
+            <Picker.Items>
+                <x:String>Bug Report</x:String>
+                <x:String>Suggestion</x:String>
+                <x:String>Other</x:String>
+            </Picker.Items>
+
+        </Picker>
 
         <Button
             Text="Send"
-            Margin="0, 5, 5, 5"
+            Margin="0, 5, 0, 5"
             WidthRequest="100"
             HeightRequest="40"
             Clicked="OnSendClicked"

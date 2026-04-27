@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UmbraCorpApp.LoginPage"
+             Title="Login"
+             Shell.TitleColor="Black"
+             >
+
+    <VerticalStackLayout BackgroundColor="Black">
+        
+        <Label 
+            Text="Login"
+            FontSize="28"
+            FontFamily="VikingSquad"
+            HorizontalOptions="Center"
+            TextColor="#962323"
+            Padding="0,5,0,5"/>
+
+        <Entry
+            x:Name="EmailEntry"
+            Placeholder="Email"
+            Keyboard="Email"
+            TextColor="#962323"
+            BackgroundColor="White"
+            WidthRequest="300"/>
+
+        <Entry
+            x:Name="PasswordEntry"
+            Placeholder="Password"
+            IsPassword="True"
+            TextColor="#962323"
+            BackgroundColor="white"
+            WidthRequest="300"
+            Margin="5"/>
+
+        <Button 
+            Text="Login"
+            FontSize="20"
+            Clicked="OnLoginClicked"
+            Margin="0,0,0,5"
+            TextColor="Black"
+            WidthRequest="250"
+            HeightRequest="50"/>
+
+        <Button
+            Text="Create Account"
+            FontSize="20"
+            Clicked="OnCreateAccountClicked"
+            TextColor="Black"
+            WidthRequest="250"
+            HeightRequest="50"/>
+
+    </VerticalStackLayout>
+    
+</ContentPage>

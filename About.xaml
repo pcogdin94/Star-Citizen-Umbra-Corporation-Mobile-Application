@@ -8,7 +8,7 @@
 
         <Label
             Padding="30"
-            Text="Created by Byte Bunny Software&#10;&#10;Lead Developer - Peter Ogdin&#10;&#10;Graphic Designer - Ryan Colosanti"
+            Text="Created by Byte Bunny Software&#10;&#10;Lead Developer - Peter Ogdin&#10;&#10;Back End Developer - Travis Sniffen&#10;&#10;Database Engineer - Travis Sniffen&#10;&#10;Graphic Designer - Ryan Colosanti"
             VerticalTextAlignment="Center"
             HorizontalTextAlignment="Center"
             TextColor="#962323"

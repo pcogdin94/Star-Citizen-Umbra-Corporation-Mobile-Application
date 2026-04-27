@@ -31,6 +31,12 @@ public partial class Links : ContentPage
         await Browser.OpenAsync("https://www.robertsspaceindustries.com/spectrum/community/UCOR");
     }
 
+    // Starjump Fleet Viewer
+    private async void OnSjfvSiteClicked(object sender, EventArgs e)
+    {
+        await Browser.OpenAsync("https://hangar.link/");
+    }
+
     // Erkul
     private async void OnErkulClicked(object sender, EventArgs e)
     {
