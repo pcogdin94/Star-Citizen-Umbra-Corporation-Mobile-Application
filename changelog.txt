@@ -11,3 +11,22 @@ v1.1.1
     - Fixed submit button display issues on contact page
     - Added website link on links page
     - Added comments on some code pages to clarify usage for future users
+
+v2.0.0
+    - Added login functionality, tied with your account on UCOR website
+    - Forced user e-mail auto population on Contact Developer page
+    - Added dropdown menu on Contact Developer page giving options for purpose of contact and made mandatory
+    - Added Starjump to Links page
+
+v2.1.0
+    - Created Administrator tab only viewable by administrators on UCOR website, for mobile execution of web-based functions
+    - Updated Calendar to new calendar used by UCOR website for better integration
+    - Performed several cosmetic fixes
+        - Size of entry boxes on Login and Register pages
+        - Color of entry boxes on Login and Register pages
+        - Size of buttons on Login and Register pages
+        - E-mail text on Contact Developer page in larger font for ease of reading
+        - Updated home screen to make it less bland
+    - Updated Credits to reflect other contributors
+    - Fixed performance issues with scrolling on Division Info page
+    - 
