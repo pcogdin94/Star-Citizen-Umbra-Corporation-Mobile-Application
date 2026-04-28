@@ -27,16 +27,28 @@ public partial class LoginPage : ContentPage
 
 			bool success = await _supabaseService.SignInAsync(email, password);
 
-			if (success)
-			{
-				//await DisplayAlert("Success", "You are now logged in.", "OK");
-				Application.Current.MainPage = new AppShell(_supabaseService);
-			}
-			else
-			{
-				await DisplayAlert("Login Failed", "Invalid email or password.", "OK");
-			}
-		}
+            if (!success)
+            {
+                await DisplayAlert("Login Failed", "Invalid email or password.", "OK");
+                return;
+            }
+
+            bool approved = await _supabaseService.IsCurrentUserApprovedAsync();
+
+            if (!approved)
+            {
+                await DisplayAlert(
+                    "Awaiting Approval",
+                    "Your account is still waiting for admin approval.",
+                    "OK");
+
+                await _supabaseService.SignOutAsync();
+                return;
+            }
+
+            Application.Current.MainPage = new AppShell(_supabaseService);
+
+        }
 		catch (Exception ex)
 		{
 			await DisplayAlert("Error", ex.Message, "OK");

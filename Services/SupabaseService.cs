@@ -35,10 +35,32 @@ namespace UmbraCorpApp.Services
 
         }
 
-        public async Task<bool> SignUpAsync(string email, string password)
+        public async Task<bool> SignUpAsync(
+            string email,
+            string password,
+            string rsiHandle,
+            string discord,
+            string division)
         {
             var session = await _client.Auth.SignUp(email, password);
-            return session?.User != null;
+
+            if (session?.User == null)
+                return false;
+
+            var request = new MemberRequest
+            {
+                UserId = session.User.Id,
+                Email = email,
+                RsiHandle = rsiHandle,
+                Discord = discord,
+                Division = division,
+                Status = "pending"
+
+            };
+
+            await _client.From<MemberRequest>().Insert(request);
+
+            return true;
         }
 
         public async Task<bool> TryRestoreSessionAsync()
@@ -155,6 +177,21 @@ namespace UmbraCorpApp.Services
                 .Single();
 
             return result?.Value;
+        }
+
+        public async Task<bool> IsCurrentUserApprovedAsync()
+        {
+            string? email = GetUserEmail();
+
+            if (string.IsNullOrWhiteSpace(email))
+                return false;
+
+            var result = await _client.
+                From<Member>()
+                .Where(x => x.Email == email)
+                .Get();
+
+            return result.Models.Count > 0;
         }
 
     }

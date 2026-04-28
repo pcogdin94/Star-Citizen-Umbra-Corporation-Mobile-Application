@@ -16,10 +16,14 @@ public partial class RegisterPage : ContentPage
 		try
 		{
 			string email = EmailEntry.Text?.Trim() ?? "";
-			string password = PasswordEntry.Text?.Trim() ?? "";
+            string rsiHandle = RsiHandleEntry.Text?.Trim() ?? "";
+            string discord = DiscordEntry.Text?.Trim() ?? "";
+            string division = DivisionPicker.SelectedItem?.ToString() ?? "";
+            string password = PasswordEntry.Text?.Trim() ?? "";
 			string confirmPassword = ConfirmPasswordEntry.Text?.Trim() ?? "";
 
-			if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(confirmPassword))
+			if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(confirmPassword) || string.IsNullOrWhiteSpace(rsiHandle)
+				|| string.IsNullOrWhiteSpace(discord) || string.IsNullOrWhiteSpace(division))
 			{
 				await DisplayAlert("Missing Info", "Please fill in all boxes before continuing.", "OK");
 				return;
@@ -31,13 +35,25 @@ public partial class RegisterPage : ContentPage
 				return;
 			}
 
-			bool success = await _supabaseService.SignUpAsync(email, password);
+			bool success = await _supabaseService.SignUpAsync(
+				email,
+				password,
+				rsiHandle,
+				discord,
+				division);
 
 			if (success)
 			{
 				await DisplayAlert(
-					"Account Created",
-					"Your account has been created, you may now log in.",
+					"Registration Submitted",
+					"Your account was created and your membership request is awaiting admin approval.",
+					"OK");
+			}
+			else
+			{
+				await DisplayAlert(
+					"Registration Failed",
+					"Your account could not be created.",
 					"OK");
 			}
 

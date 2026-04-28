@@ -200,7 +200,7 @@
                 />
 
             <Label
-                Text="v2.1.0"
+                Text="v2.1.1"
                 Padding="20"
                 FontFamily="VikingSquad"
                 TextColor="#962323"
