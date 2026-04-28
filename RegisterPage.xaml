@@ -28,6 +28,39 @@
                 WidthRequest="300"/>
 
             <Entry
+                x:Name="RsiHandleEntry"
+                Placeholder="RSI Handle"                
+                TextColor="#962323"
+                BackgroundColor="White"
+                WidthRequest="300"
+                Margin="0,5,0,0"/>
+
+            <Entry
+                x:Name="DiscordEntry"
+                Placeholder="Discord Username"
+                TextColor="#962323"
+                BackgroundColor="White"
+                WidthRequest="300"
+                Margin="0,5,0,0"/>
+
+            <Picker
+                x:Name="DivisionPicker"
+                Title="Select Division"
+                TextColor="#962323"
+                BackgroundColor="White"
+                WidthRequest="300"
+                Margin="0,5,0,0">
+
+                <Picker.Items>
+                    <x:String>Main Fleet</x:String>
+                    <x:String>Racing</x:String>
+                    <x:String>Security</x:String>
+                    <x:String>Logistics</x:String>
+                </Picker.Items>
+                
+            </Picker>
+
+            <Entry
                 x:Name="PasswordEntry"
                 Placeholder="Password"
                 IsPassword="True"

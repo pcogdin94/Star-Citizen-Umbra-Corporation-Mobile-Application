@@ -7,10 +7,8 @@
     <VerticalStackLayout Margin="0" BackgroundColor="Black">
 
         <WebView x:Name="ucCalendar" 
-                 HeightRequest="750"
-                 WidthRequest="385"
-                 VerticalOptions="Fill" 
-                 HorizontalOptions="Fill"
+                 VerticalOptions="FillAndExpand" 
+                 HorizontalOptions="FillAndExpand"
                 />
         
     </VerticalStackLayout>
